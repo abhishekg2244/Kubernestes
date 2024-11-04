@@ -1,0 +1,22 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: multipod
+  namespace: 22102024ns
+
+spec:
+  containers:
+  - name: netflix
+    image: devopsinsiders/netflix-clone
+  
+    ports:
+    - containerPort: 80
+  
+  - name: firefox-pod
+    image: linuxserver/firefox
+  
+    ports:
+    - containerPort: 3000
+

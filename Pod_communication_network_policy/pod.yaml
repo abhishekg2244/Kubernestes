@@ -1,0 +1,15 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: aap
+  namespace: 22102024ns
+
+spec:
+  containers:
+  - name: nginx-pod
+    image: nginx:latest
+  
+    ports:
+    - containerPort: 80

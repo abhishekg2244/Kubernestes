@@ -1,0 +1,15 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: firefox-pod
+  namespace: 22102024ns
+
+spec:
+  containers:
+  - name: firefox-pod
+    image: linuxserver/firefox
+  
+    ports:
+    - containerPort: 3000

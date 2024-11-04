@@ -1,0 +1,29 @@
+kubectl version
+kubectl get nodes
+
+kubectl get namespaces
+
+kubectl get pods --all-namespaces
+
+kubectl create -f ./namespace.yaml
+
+kubectl explain pod --recursive > pod.txt
+
+kubectl create -f .\pod.yaml
+kubectl port-forward aap 8080:80  --namespace=22102024ns
+
+kubectl config set-context --current --namespace=22102024ns
+
+kubectl describe  pod multipod 
+
+kubectl  create -f .\multipod.yaml
+
+kubectl delete pod multipod    
+
+kubectl  create -f .\multipod.yaml
+
+kubectl get pod podwithlabel -o wide
+
+kubectl describe  pod firefox-pod 
+
+kubectl get networkpolicy
