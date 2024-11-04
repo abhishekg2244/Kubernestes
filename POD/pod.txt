@@ -1,0 +1,17 @@
+# command #
+
+az login
+
+az account set --subscription ba905d23-27f9-4e49-a6c5-5b57edb11d6f
+
+az aks get-credentials --resource-group testaksrg --name akscluster121012024 --overwrite-existing
+
+kubectl run nginx --image=nginx:latest
+
+kubectl port-forwared pod nginx 8080:80
+
+kubectl stop pod nginx
+
+ kubectl create namespace testingns
+
+ kubectl config set-context --current --namespace=tesingns
