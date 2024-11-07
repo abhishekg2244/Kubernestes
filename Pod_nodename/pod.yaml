@@ -1,0 +1,17 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: pod-node-name
+  namespace: tuesday-ns
+
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+
+      ports:
+      - containerPort: 80
+  
+  nodeName: aks-agentpool-02997012-vmss000003

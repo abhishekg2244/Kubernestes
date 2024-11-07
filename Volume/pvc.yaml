@@ -1,0 +1,17 @@
+apiVersion:  v1
+
+kind: PersistentVolumeClaim
+
+metadata: 
+  name: sat-mypvc
+  namespace: sat-ns
+
+spec:
+  accessModes:
+    - ReadWriteMany
+
+  resources:
+    requests: 
+      storage: 2Gi
+
+  storageClassName: sat

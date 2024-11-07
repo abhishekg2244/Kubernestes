@@ -1,0 +1,20 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: pod-node-selector
+  namespace: tuesday-ns
+
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+
+      ports:
+      - containerPort: 80
+  
+ 
+  nodeSelector:
+    # applicationNode: linuxnode
+    test: pod

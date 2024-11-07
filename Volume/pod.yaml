@@ -1,0 +1,15 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata: 
+  name: sat-pod
+  namespace: sat-ns
+
+spec:
+  containers:
+    - name: satpod
+      image: nginx:latest
+
+      ports:
+      - containerPort: 80

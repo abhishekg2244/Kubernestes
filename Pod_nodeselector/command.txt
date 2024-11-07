@@ -1,0 +1,17 @@
+kubectl get node
+
+kubectl explain pod --recursive >pod.txt
+
+kubectl get namespace
+
+kubectl create namespace tuesday-ns
+
+kubectl config set-context --current --namespace=tuesday-ns
+
+kubectl get pod
+
+ kubectl describe pod/pod-node-name
+
+ kubectl get node --show-labels=false
+
+ kubectl get pods -o wide

@@ -1,0 +1,15 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata: 
+  name: airpod
+  namespace: abhi-ns
+
+spec:
+  containers:
+  - name: air
+    image: nginx:latest
+
+    ports:
+    - containerPort: 80

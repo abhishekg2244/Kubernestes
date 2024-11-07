@@ -1,0 +1,18 @@
+apiVersion: storage.k8s.io/v1
+
+kind: StorageClass
+
+metadata:
+  name: sat-sc
+  namespace: sat-ns
+
+provisioner: file.csi.azure.com
+
+parameters:
+  storageAccount: storageab2244
+  resourcegroup: storageRG
+
+
+reclaimPolicy: Retain
+
+allowVolumeExpansion: true
